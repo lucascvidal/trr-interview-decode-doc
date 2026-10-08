@@ -9,7 +9,6 @@ def decode_message(url: str) -> None:
 
 if __name__ == "__main__":
     SAMPLE_URL = (
-        "https://docs.google.com/document/d/"
-        "15yp-KodWl3xiW4d6bnDk0e-Ci2Q65QXUqcnUpk7ybog/export?format=html"
+        "https://docs.google.com/document/d/e/2PACX-1vQq0c4tDdEaPjQ8gvokUkfqEVKLlWql5qwrGyuTeYNKIK_90pWznAm1bWSCQ7IHhnDwt8LbdxPHb4IR/pub"
     )
     decode_message(SAMPLE_URL)
