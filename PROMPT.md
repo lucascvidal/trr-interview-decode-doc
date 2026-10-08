@@ -13,7 +13,7 @@ You are given a **Google Doc** URL. The document contains a table of ASCII chara
 
 ## Data shape
 
-The Google Doc’s exported HTML includes a table. After the header row, each data row has three cells, in this order:
+The Google Doc’s published HTML includes a table. After the header row, each data row has three cells, in this order:
 
 | x-coordinate | Character | y-coordinate |
 |-------------:|:---------:|-------------:|
@@ -29,10 +29,10 @@ The Google Doc’s exported HTML includes a table. After the header row, each da
 ## Sample Google Doc (live exercise)
 
 ```
-https://docs.google.com/document/d/15yp-KodWl3xiW4d6bnDk0e-Ci2Q65QXUqcnUpk7ybog/export?format=html
+https://docs.google.com/document/d/e/2PACX-1vQq0c4tDdEaPjQ8gvokUkfqEVKLlWql5qwrGyuTeYNKIK_90pWznAm1bWSCQ7IHhnDwt8LbdxPHb4IR/pub
 ```
 
-This is the HTML export of a Google Doc containing the table above. Fetch it with `requests` and parse the table.
+This is the published HTML of a Google Doc containing the table above. Fetch it with `requests` and parse the table.
 
 ## What to implement
 
@@ -52,7 +52,7 @@ fetches the sample URL, builds the grid, and prints the message to stdout.
 ## Out of scope for 25 minutes
 
 - Auth, databases, web UI, Docker
-- Supporting both the shared document URL and export URL forms
+- Supporting multiple Google Docs URL forms
 - Exhaustive error handling or a full test suite
 
 If time remains, the interviewer may ask about edge cases (malformed rows, empty document, network failure).
